@@ -1,0 +1,52 @@
+/* Estilos para el encabezado */
+body {
+    font-family: 'Righteous', cursive;
+    overflow: hidden;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #546b7a;
+    opacity: 0.9;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #dbe9f3;
+}
+
+header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #2c3f4d;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c3f4d;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #1a93c9;
+}

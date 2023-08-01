@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    width: 100%;
+    margin: 2% 5%;
+}
+
+.contactame_form {
+    width: 50%;
+}
+
+.contactame_form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #dbe9f3;
+}
+
+.contactame_form input,
+.contactame_form textarea {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 75%;
+    font-size: 18px;
+    border-radius: 5px;
+    opacity: 0.8;
+    border: 1px solid #6a7f8d;
+}
+
+.contactame_form button[type="submit"] {
+    background-color: #1a93c9;
+    color: #1f2937;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.contactame_form button[type="submit"]:hover {
+    background-color: #38BDF8;
+    transform: scale(1.05);
+}
+
+.image-dialogue-container {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.comentador {
+    transform: scaleX(-1);
+}
+
+.dialogue-box {
+    transform: skewY(-1deg);
+}
+
+#dialogue {
+    border: 4px dotted #6a7f8d;
+    border-spacing: 10px;
+    color: #dbe9f3;
+    border-radius: 15px;
+    position: absolute;
+    width: 50%;
+    top: 0px;
+    left: -5px;
+    padding: 15px;
+    display: none;
+}

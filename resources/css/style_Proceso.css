@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dbe9f3;
+  }
+  
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle {
+    width: 15px;
+    height: 15px;
+    top: 300px;
+    left: 300px;
+    background-color: #c5d4e1;
+    animation-name: scale;
+    transform-origin: center;
+  }
+  
+  .square {
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+    background-color: yellow;
+    animation: rotate 3s linear infinite;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #3eb7f6 transparent;
+    animation: appear 3s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes scale {
+    0% {
+        transform: rotate(45deg) scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(45deg) scale(1.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(45deg) scale(0.5);
+        opacity: 0;
+    }
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+  } 
