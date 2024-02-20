@@ -9,8 +9,8 @@ document.addEventListener("mousemove", function(event) {
   const posY = event.clientY;
 
   // Actualiza la posición del contenedor
-  imagenContainer.style.left = (posX-10) + "px";
-  imagenContainer.style.top = (posY+10) + "px";
+  imagenContainer.style.left = (posX-20) + "px";
+  imagenContainer.style.top = (posY+15) + "px";
 
   // Muestra la imagen
   imagen.style.display = "block";
